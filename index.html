@@ -486,34 +486,56 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-                        <button type="button" class="btn btn-danger">Elimina</button>
+                        <button type="button" class="btn btn-danger" data-bs-target="#delete-success" data-bs-toggle="modal">Elimina</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- DELETED ITEM ADVISOR -->
+        <div class="modal fade" id="delete-success" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Elemento eliminato</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        L'elemento &egrave; stato eliminato con successo
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
         <!-- ADD ITEM -->
-        <div class="modal fade" id="add-item" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="add-item" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Aggiungi un libro</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Recipient:</label>
-                      <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Message:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                  </form>
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Titolo:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Titolo del libro">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Data di prestito:</label>
+                            <input type="date" class="form-control" id="loa-date">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Note:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Vuoi lasciare una nota?"></textarea>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                  <button type="button" class="btn btn-primary">Aggiungi libro</button>
                 </div>
               </div>
             </div>
