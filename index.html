@@ -9,7 +9,9 @@
     <title>Bootstrap dashboard</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -41,9 +43,11 @@
             </div>
           </nav>
     </header>
+    <!-- MAIN -->
     <main>
         <div class="container my-4">
-            <div class="row row-cols-sm-1 row-cols-md-2">
+            <!-- MAIN CONTENT -->
+            <div class="row row-cols-sm-1 row-cols-lg-2">
                 <div class="col">
                     <div class="row row-cols-2">
                         <div class="col">
@@ -53,214 +57,313 @@
                             <button type="button" class="btn btn-primary">Aggiungi libro</button>
                         </div>
                     </div>
-                <div class="row row-cols-1">
-                    <div class="col">
-                        <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th>Titolo</th>
-                                <th>Stato</th>
-                                <th class="text-center">Azioni</th>
-                              </tr>
-                            </thead>
-                            <tbody>
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <!-- TABLE -->
+                            <table class="table table-striped">
+                                <!-- TABLE HEADING -->
+                                <thead>
                                 <tr>
-                                    <td>I pilastri della terra</td>
-                                    <td>Disponibile</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </td>
+                                    <th>Titolo</th>
+                                    <th class="d-none d-md-table-cell">Data prestito</th>
+                                    <th>Stato</th>
+                                    <th class="text-center">Azioni</th>
                                 </tr>
-                                <tr>
-                                    <td>I promessi sposi</td>
-                                    <td>Disponibile</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                </thead>
+                                <!-- TABLE BODY -->
+                                <tbody>
+                                    <!-- TABLE ROW 1 -->
+                                    <tr>
+                                        <td>I pilastri della terra</td>
+                                        <td class="d-none d-md-table-cell">-</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-bg-success">Disponibile</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Il signore degli anelli</td>
-                                    <td>In prestito</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Harry Potter e la pietra filosofale</td>
-                                    <td>Disponibile</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 2 -->
+                                    <tr>
+                                        <td>I promessi sposi</td>
+                                        <td class="d-none d-md-table-cell">-</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-bg-success">Disponibile</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Il codice Da Vinci</td>
-                                    <td>Non disponibile</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Shining</td>
-                                    <td>Disponibile</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 3 -->
+                                    <tr>
+                                        <td>Il signore degli anelli</td>
+                                        <td class="d-none d-md-table-cell"><time datetime="2023-10-18">18/10/2023</time></td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-white bg-warning">In prestito</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>La divina commedia</td>
-                                    <td>In prestito</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Il trono di spade</td>
-                                    <td>Disponibile</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 4 -->
+                                    <tr>
+                                        <td>Harry Potter e la pietra filosofale</td>
+                                        <td class="d-none d-md-table-cell">-</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-bg-success">Disponibile</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Il mondo di Sofia</td>
-                                    <td>Non disponibile</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Le cronache di Narnia: Il leone, la strega e l'armadio</td>
-                                    <td>In prestito</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 5 -->
+                                    <tr>
+                                        <td>Il codice Da Vinci</td>
+                                        <td class="d-none d-md-table-cell">-</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-bg-danger">Non disponibile</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Il piccolo principe</td>
-                                    <td>Disponibile</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>La storia infinita</td>
-                                    <td>Disponibile</td>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col d-flex gap-1">
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-outline-secondary">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 6 -->
+                                    <tr>
+                                        <td>Shining</td>
+                                        <td class="d-none d-md-table-cell">-</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-bg-success">Disponibile</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                </div>
-                    
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 7 -->
+                                    <tr>
+                                        <td>La divina commedia</td>
+                                        <td class="d-none d-md-table-cell"><time datetime="2023-09-21">21/09/2023</time></td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-white bg-warning">In prestito</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 8 -->
+                                    <tr>
+                                        <td>Il trono di spade</td>
+                                        <td class="d-none d-md-table-cell">-</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-bg-success">Disponibile</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 9 -->
+                                    <tr>
+                                        <td>Il mondo di Sofia</td>
+                                        <td class="d-none d-md-table-cell">-</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-bg-danger">Non disponibile</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 10 -->
+                                    <tr>
+                                        <td>Le cronache di Narnia: Il leone, la strega e l'armadio</td>
+                                        <td class="d-none d-md-table-cell"><time datetime="2023-07-25">25/07/2023</time></td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-white bg-warning">In prestito</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 11 -->
+                                    <tr>
+                                        <td>Il piccolo principe</td>
+                                        <td class="d-none d-md-table-cell">-</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-bg-success">Disponibile</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- TABLE ROW 12 -->
+                                    <tr>
+                                        <td>La storia infinita</td>
+                                        <td class="d-none d-md-table-cell">-</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="badge text-bg-success">Disponibile</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col d-flex gap-1">
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                   
                 </div>
             </div>
         </div>
