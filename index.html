@@ -507,8 +507,7 @@
                     </div>
                 </div>
             </div>
-          </div>
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
+        </div>
         <!-- ADD ITEM -->
         <div class="modal fade" id="add-item" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -526,6 +525,18 @@
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Data di prestito:</label>
                             <input type="date" class="form-control" id="loa-date">
+                        </div>
+                        <div class="mb-3">
+                            <span class="d-block mb-2">Disponibilit&agrave;:</span>
+                            <button type="button" class="btn btn-outline-success" data-bs-toggle="popover" title="Articolo disponibile" data-bs-content="Il seguente articolo e disponibile in magazzino.">
+                                Disponibile
+                            </button>
+                            <button type="button" class="btn btn-outline-warning" data-bs-toggle="popover" title="Articolo prestato" data-bs-content="Il seguente articolo e attualmente in prestito.">
+                                In prestito
+                            </button>
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="popover" title="Articolo non disponibile" data-bs-content="Il seguente articolo non e attualmente disponibile">
+                                Non disponibile
+                            </button>
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Note:</label>
