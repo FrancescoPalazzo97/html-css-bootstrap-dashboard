@@ -94,7 +94,7 @@
                                         <td>
                                             <div class="row">
                                                 <div class="col d-flex gap-1">
-                                                    <button type="button" class="btn btn-outline-secondary">
+                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modify-item-1">
                                                         <i class="fa-solid fa-pencil"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#delete-item">
@@ -118,7 +118,7 @@
                                         <td>
                                             <div class="row">
                                                 <div class="col d-flex gap-1">
-                                                    <button type="button" class="btn btn-outline-secondary">
+                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modify-item-2">
                                                         <i class="fa-solid fa-pencil"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#delete-item">
@@ -142,7 +142,7 @@
                                         <td>
                                             <div class="row">
                                                 <div class="col d-flex gap-1">
-                                                    <button type="button" class="btn btn-outline-secondary">
+                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modify-item-3">
                                                         <i class="fa-solid fa-pencil"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#delete-item">
@@ -166,7 +166,7 @@
                                         <td>
                                             <div class="row">
                                                 <div class="col d-flex gap-1">
-                                                    <button type="button" class="btn btn-outline-secondary">
+                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modify-item-4">
                                                         <i class="fa-solid fa-pencil"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#delete-item">
@@ -190,7 +190,7 @@
                                         <td>
                                             <div class="row">
                                                 <div class="col d-flex gap-1">
-                                                    <button type="button" class="btn btn-outline-secondary">
+                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modify-item-5">
                                                         <i class="fa-solid fa-pencil"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#delete-item">
@@ -525,7 +525,7 @@
                                 <div class="row justify-content-between row-gap-2">
                                     <div class="col-6">
                                         <label for="recipient-name" class="col-form-label">Nome Autore:</label>
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Inserisci il nome dell'autore">
+                                        <input type="text" class="form-control" id="recipient-name" >
                                     </div>
                                     <div class="col-6">
                                         <label for="recipient-name" class="col-form-label">Cognome Autore:</label>
@@ -602,6 +602,459 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Elemento aggiunto</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        L'elemento &egrave; stato aggiunto con successo
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODIFY ITEM -->
+        <!-- ITEM 1 -->
+        <div class="modal fade" id="modify-item-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modifica elemento</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="container-fluid">
+                                <!-- MODAL ROW 1 -->
+                                <div class="row justify-content-between row-gap-2">
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Nome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Ken">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Cognome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Follet">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Titolo:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="I pilastri della terra">
+                                        <label for="recipient-name" class="col-form-label fs-6 fw-light">Titolo versione italiana</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Genere:</span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option>Scegli il genere</option>
+                                            <option value="1">Fantasy</option>
+                                            <option value="2">Giallo</option>
+                                            <option value="3">Horror</option>
+                                            <option value="4">Avventura</option>
+                                            <option selected value="5">Romanzo storico</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Anno di publicazione:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="1989">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">ISBN#:</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Inserisci il codice ISBN#">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Data di prestito:</label>
+                                        <input type="date" class="form-control" id="loan-date">
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Disponibilit&agrave;:</span>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Articolo disponibile" data-bs-content="Il seguente articolo e disponibile in magazzino.">
+                                            Disponibile
+                                        </button>
+                                        <button type="button" class="btn btn-outline-warning" data-bs-toggle="popover" title="Articolo prestato" data-bs-content="Il seguente articolo e attualmente in prestito.">
+                                            In prestito
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="popover" title="Articolo non disponibile" data-bs-content="Il seguente articolo non e attualmente disponibile">
+                                            Non disponibile
+                                        </button>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message-text" class="col-form-label">Note:</label>
+                                        <textarea class="form-control" id="message-text" placeholder="Vuoi lasciare una nota?"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Disponibile anche in digitale
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                        <button type="button" class="btn btn-primary" data-bs-target="#modify-success" data-bs-toggle="modal">Modifica libro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ITEM 2 -->
+        <div class="modal fade" id="modify-item-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modifica elemento</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="container-fluid">
+                                <!-- MODAL ROW 1 -->
+                                <div class="row justify-content-between row-gap-2">
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Nome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Alessandro">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Cognome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Manzoni">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Titolo:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="I promessi sposi">
+                                        <label for="recipient-name" class="col-form-label fs-6 fw-light">Titolo versione italiana</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Genere:</span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option>Scegli il genere</option>
+                                            <option value="1">Fantasy</option>
+                                            <option value="2">Giallo</option>
+                                            <option value="3">Horror</option>
+                                            <option value="4">Avventura</option>
+                                            <option selected value="5">Romanzo storico</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Anno di publicazione:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="1827">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">ISBN#:</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Inserisci il codice ISBN#">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Data di prestito:</label>
+                                        <input type="date" class="form-control" id="loan-date">
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Disponibilit&agrave;:</span>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Articolo disponibile" data-bs-content="Il seguente articolo e disponibile in magazzino.">
+                                            Disponibile
+                                        </button>
+                                        <button type="button" class="btn btn-outline-warning" data-bs-toggle="popover" title="Articolo prestato" data-bs-content="Il seguente articolo e attualmente in prestito.">
+                                            In prestito
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="popover" title="Articolo non disponibile" data-bs-content="Il seguente articolo non e attualmente disponibile">
+                                            Non disponibile
+                                        </button>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message-text" class="col-form-label">Note:</label>
+                                        <textarea class="form-control" id="message-text" placeholder="Vuoi lasciare una nota?"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Disponibile anche in digitale
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                        <button type="button" class="btn btn-primary" data-bs-target="#modify-success" data-bs-toggle="modal">Modifica libro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ITEM 3 -->
+        <div class="modal fade" id="modify-item-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modifica elemento</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="container-fluid">
+                                <!-- MODAL ROW 1 -->
+                                <div class="row justify-content-between row-gap-2">
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Nome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="J. R. R.">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Cognome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Tolkien">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Titolo:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Il signore degli anelli">
+                                        <label for="recipient-name" class="col-form-label fs-6 fw-light">Titolo versione italiana</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Genere:</span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option>Scegli il genere</option>
+                                            <option selected value="1">Fantasy</option>
+                                            <option value="2">Giallo</option>
+                                            <option value="3">Horror</option>
+                                            <option value="4">Avventura</option>
+                                            <option value="5">Romanzo storico</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Anno di publicazione:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="1954">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">ISBN#:</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Inserisci il codice ISBN#">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Data di prestito:</label>
+                                        <input type="date" class="form-control" id="loan-date">
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Disponibilit&agrave;:</span>
+                                        <button type="button" class="btn btn-outline-success" data-bs-toggle="popover" title="Articolo disponibile" data-bs-content="Il seguente articolo e disponibile in magazzino.">
+                                            Disponibile
+                                        </button>
+                                        <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Articolo prestato" data-bs-content="Il seguente articolo e attualmente in prestito.">
+                                            In prestito
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="popover" title="Articolo non disponibile" data-bs-content="Il seguente articolo non e attualmente disponibile">
+                                            Non disponibile
+                                        </button>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message-text" class="col-form-label">Note:</label>
+                                        <textarea class="form-control" id="message-text" placeholder="Vuoi lasciare una nota?"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Disponibile anche in digitale
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                        <button type="button" class="btn btn-primary" data-bs-target="#modify-success" data-bs-toggle="modal">Modifica libro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ITEM 4 -->
+        <div class="modal fade" id="modify-item-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modifica elemento</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="container-fluid">
+                                <!-- MODAL ROW 1 -->
+                                <div class="row justify-content-between row-gap-2">
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Nome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="J. K.">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Cognome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Rowling">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Titolo:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Harry Potter e la pietra filosofale">
+                                        <label for="recipient-name" class="col-form-label fs-6 fw-light">Titolo versione italiana</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Genere:</span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option>Scegli il genere</option>
+                                            <option selected value="1">Fantasy</option>
+                                            <option value="2">Giallo</option>
+                                            <option value="3">Horror</option>
+                                            <option value="4">Avventura</option>
+                                            <option value="5">Romanzo storico</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Anno di publicazione:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="1997">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">ISBN#:</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Inserisci il codice ISBN#">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Data di prestito:</label>
+                                        <input type="date" class="form-control" id="loan-date">
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Disponibilit&agrave;:</span>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Articolo disponibile" data-bs-content="Il seguente articolo e disponibile in magazzino.">
+                                            Disponibile
+                                        </button>
+                                        <button type="button" class="btn btn-outline-warning" data-bs-toggle="popover" title="Articolo prestato" data-bs-content="Il seguente articolo e attualmente in prestito.">
+                                            In prestito
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="popover" title="Articolo non disponibile" data-bs-content="Il seguente articolo non e attualmente disponibile">
+                                            Non disponibile
+                                        </button>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message-text" class="col-form-label">Note:</label>
+                                        <textarea class="form-control" id="message-text" placeholder="Vuoi lasciare una nota?"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Disponibile anche in digitale
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                        <button type="button" class="btn btn-primary" data-bs-target="#modify-success" data-bs-toggle="modal">Modifica libro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ITEM 5 -->
+        <div class="modal fade" id="modify-item-5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modifica elemento</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="container-fluid">
+                                <!-- MODAL ROW 1 -->
+                                <div class="row justify-content-between row-gap-2">
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Nome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Dan">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="recipient-name" class="col-form-label">Cognome Autore:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Brown">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Titolo:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="Il codice da Vinci">
+                                        <label for="recipient-name" class="col-form-label fs-6 fw-light">Titolo versione italiana</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Genere:</span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option>Scegli il genere</option>
+                                            <option value="1">Fantasy</option>
+                                            <option selected value="2">Giallo</option>
+                                            <option value="3">Horror</option>
+                                            <option value="4">Avventura</option>
+                                            <option value="5">Romanzo storico</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Anno di publicazione:</label>
+                                        <input type="text" class="form-control" id="recipient-name" value="2003">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">ISBN#:</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Inserisci il codice ISBN#">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="recipient-name" class="col-form-label">Data di prestito:</label>
+                                        <input type="date" class="form-control" id="loan-date">
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="d-block mb-2">Disponibilit&agrave;:</span>
+                                        <button type="button" class="btn btn-outline-success" data-bs-toggle="popover" title="Articolo disponibile" data-bs-content="Il seguente articolo e disponibile in magazzino.">
+                                            Disponibile
+                                        </button>
+                                        <button type="button" class="btn btn-outline-warning" data-bs-toggle="popover" title="Articolo prestato" data-bs-content="Il seguente articolo e attualmente in prestito.">
+                                            In prestito
+                                        </button>
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="popover" title="Articolo non disponibile" data-bs-content="Il seguente articolo non e attualmente disponibile">
+                                            Non disponibile
+                                        </button>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message-text" class="col-form-label">Note:</label>
+                                        <textarea class="form-control" id="message-text" placeholder="Vuoi lasciare una nota?"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Disponibile anche in digitale
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                        <button type="button" class="btn btn-primary" data-bs-target="#modify-success" data-bs-toggle="modal">Modifica libro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODIFIED ITEM ADVISOR -->
+        <div class="modal fade" id="modify-success" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Elemento modificato</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
